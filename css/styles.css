@@ -131,6 +131,16 @@ ul {
   color: var(--title-text-color);
 }
 
+.icon-link {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+
+.smartphone:hover,
+.smartphone:focus {
+  fill: var(--accent-color);
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-color);
@@ -213,18 +223,20 @@ ul {
 
 .section-list.feature {
   display: flex;
+  /* margin-right: -30px; */
+  margin: -15px;
 }
 
 
-.text:not(:last-child) {
+/* .text:not(:last-child) {
   margin-right: var(--card-set-gap);
-}
+} */
 
 .text {
-  flex-basis: calc((100% -3 * var(--card-set-gap)) / 4);
-  width: 270px;
-  margin-top: 0;
-  margin-bottom: 0;
+  flex-basis: calc((100% -4 * var(--card-set-gap)) / 4);
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  margin: 15px;
 }
 
 
