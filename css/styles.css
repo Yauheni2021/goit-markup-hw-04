@@ -10,6 +10,7 @@
   --bg-button-color: #188ce8;
   --bg-team-color: #f5f4fa;
   --cards-border: #eeeeee;
+  --social-link-color:#AFB1B8;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --btn-shadow-color: rgba(0, 0, 0, 0.15);
   --card-set-gap: 30px;
@@ -335,6 +336,7 @@ ul {
   line-height: 1.18em;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
   color: var(--primary-text-color);
 }
 
@@ -346,7 +348,7 @@ ul {
 
 .socials-list {
   display: flex;
-
+  justify-content: center;
 
 }
 
@@ -357,12 +359,13 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--social-link-color);
 }
 
 .socials-link:hover,
 .socials-link:focus {
   background-color: var(--accent-color);
-  
+  color: var(--primary-bg-color);
 }
 
 .socials-item:not(:last-child) {
@@ -371,7 +374,7 @@ ul {
 
 .social-icon {
   fill: var(--primary-bg-color);
-  /* fill: currentColor; */
+  fill: currentColor;
 }
 
 /* ------examples-clients------ */
@@ -383,6 +386,8 @@ ul {
 
 .examples-thumb {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -390,9 +395,23 @@ ul {
   border-radius: 4px;
 }
 
+.examples-thumb:hover,
+.examples-thumb:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.social-example {
+  fill: var(--social-link-color);
+}
+
+.social-example:hover,
+.social-example:focus {
+  fill: var(--accent-color);
+}
+
 .examples-link {
   display: block;
-  padding: 16px 32px;
+  color: var(--social-link-color);
 }
 
 /* .examples-link:hover,
@@ -446,6 +465,37 @@ ul {
 .footer-link.current:hover,
 .footer-link.current:focus {
   color: var(--accent-color);
+}
+
+.footer-thumb {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  height: 80px;
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.social-list.footer {
+  display: flex;
+
+}
+
+.socials-link.footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-bg-color);
+}
+
+.socials-link.footer:hover,
+.socials-link.footer:focus {
+  background-color: var(--accent-color);
 }
 
 /* портфолио */
