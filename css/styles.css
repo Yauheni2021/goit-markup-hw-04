@@ -361,7 +361,8 @@ ul {
 
 .socials-link:hover,
 .socials-link:focus {
-  fill: var(--accent-color);
+  background-color: var(--accent-color);
+  
 }
 
 .socials-item:not(:last-child) {
@@ -369,7 +370,8 @@ ul {
 }
 
 .social-icon {
-  fill: currentColor;
+  fill: var(--primary-bg-color);
+  /* fill: currentColor; */
 }
 
 /* ------examples-clients------ */
