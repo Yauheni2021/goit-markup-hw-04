@@ -73,7 +73,9 @@ ul {
 
 .section-list.header {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: baseline;
+  /* align-items: center; */
   margin-left: auto;
 }
 
@@ -382,22 +384,27 @@ ul {
 .examples-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.examples-thumb {
+.examples-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
+
 }
 
-.examples-thumb:hover,
-.examples-thumb:focus {
+
+
+.examples-item:hover,
+.examples-item:focus {
   border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .social-example {
@@ -407,6 +414,7 @@ ul {
 .social-example:hover,
 .social-example:focus {
   fill: var(--accent-color);
+
 }
 
 .examples-link {
@@ -414,15 +422,17 @@ ul {
   color: var(--social-link-color);
 }
 
-/* .examples-link:hover,
+.examples-link:hover,
 .examples-link:focus {
-  fill:var(--accent-color)
-} */
+  fill:var(--accent-color);
+  /* border-color: transparent; */
+}
 
 /* подвал */
 
 .container.footer {
   display: flex;
+  align-items: baseline;
 }
 
 .container-address {
@@ -478,13 +488,15 @@ ul {
 .footer-thumb {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
   width: 206px;
   height: 80px;
-  padding-top: 15px;
+
 }
 
 .footer-text {
-  font-weight: 700;
+  display: block;
+  
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -556,6 +568,7 @@ ul {
 /* карточки */
 
 .cards-suplink {
+  display: block;
   text-decoration: none;
 }
 
@@ -577,12 +590,16 @@ ul {
   box-sizing: border-box;
 }
 
-.cards-suplist:hover,
-.cards-suplist:focus {
+.cards-suplink:hover, 
+.cards-suplink:focus {
   border: 1px solid var(--cards-border);
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+
+
+
 
 
 .section-list.cards {
