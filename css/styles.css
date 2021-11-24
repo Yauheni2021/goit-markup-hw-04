@@ -405,23 +405,6 @@ ul {
 }
 
 
-
-/* .examples-item:hover,
-.examples-item:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
-} */
-
-.social-example {
-  fill: var(--social-link-color);
-}
-
-/* .social-example:hover,
-.social-example:focus {
-  fill: var(--accent-color);
-
-} */
-
 .examples-link {
   display: flex;
   justify-content: center;
@@ -431,7 +414,7 @@ ul {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   
-  color: var(--social-link-color);
+  fill: var(--social-link-color);
 }
 
 .examples-link:hover,
