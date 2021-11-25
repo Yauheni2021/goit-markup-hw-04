@@ -88,8 +88,8 @@ ul {
 .contacts-item {
   display: flex;
   text-align: center;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  /* padding-bottom: 32px;
+  padding-top: 32px; */
 }
 
 .contacts-item:not(:last-child) {
@@ -99,6 +99,18 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.link.envelope {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.link.smartphone {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 
@@ -237,7 +249,6 @@ ul {
   background-color: var(--bg-team-color);
   border-radius: 4px;
   margin-bottom: 30px;
-  /* padding: 25px 100px; */
 }
 
 
@@ -391,16 +402,17 @@ ul {
 
 .examples-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
+  margin: -15px;
 }
 
 .examples-item {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  flex-basis: calc((100% - 6 * var(--card-set-gap)) / 6);
+  margin: 15px;
   color: var(--accent-color);
 }
 
