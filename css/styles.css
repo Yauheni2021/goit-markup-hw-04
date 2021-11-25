@@ -402,7 +402,6 @@ ul {
 
 .examples-list {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   margin: -15px;
 }
